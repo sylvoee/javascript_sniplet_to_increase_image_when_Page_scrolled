@@ -1,0 +1,24 @@
+section{
+    height: 100vh;
+    background-color: rgb(65, 30, 17);
+    color:violet;
+    padding:3em;
+}
+
+#sectionA{
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    font-size: large;
+}
+
+#section h2{
+    color:purple;
+    position: relative;
+    
+    
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>increase Image size and miving at the same time</title>
+
+    <link rel="stylesheet" href="custom3.css">
+</head>
+<body>
+    <section id ="sectionA">
+        <div class="sectionA">
+        <div class="banner"><h2>Background image increases as you scroll</h2></div>
+       
+</section>
+
+<section id ="sectionB">
+    <div class="sectionB">
+        <h3>Section B</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic voluptatem explicabo quis error laborum ut quasi, aperiam labore dolores sed. Adipisci voluptate debitis recusandae et at esse ullam aspernatur fuga delectus laudantium beatae enim, quam animi nesciunt ut cupiditate dolorem rem culpa autem! Cupiditate quaerat aspernatur ullam molestias amet fugit!</p>
+   
+</section>
+
+<script>
+    $(document).ready(()=>{
+        $(window).scroll(()=>{
+
+       let move = 0;
+       let scroll = $(window).scrollTop();
+
+            move = scroll;
+            $("#sectionA").css({
+            width: (100 + scroll) + "%",
+            backgroundPosition: move + "px"
+               
+               
+               
+            });
+        });
+    });
+   
+</script>
+</body>
+</html>
